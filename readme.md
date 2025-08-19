@@ -1,7 +1,8 @@
 # AutoEnvForge
 
 A robust one-click tool for auto-setting up dev environments from GitHub repos.
-![AutoEnvForge - Environment Setup Tool.jpg](..%2FAutoEnvForge%20-%20Environment%20Setup%20Tool.jpg)
+![Uploading AutoEnvForge - Environment Setup Tool.jpg…]()
+
 ## Features
 - Auto-detects languages (Python, JS, Java; extensible).
 - AI-infers hidden deps (e.g., from code imports).
