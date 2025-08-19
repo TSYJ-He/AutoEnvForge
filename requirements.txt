@@ -1,0 +1,14 @@
+pygit2==1.15.0
+tree_sitter==0.21.4
+tree_sitter_languages==1.10.2
+transformers==4.44.2
+torch==2.4.0
+docker==7.1.0
+click==8.1.7
+semver==3.0.2
+requests==2.32.3  # For fetching latest dep versions if needed
+poetry==1.8.3  # Python dep resolver
+tenacity==9.0.0  # Retries
+tqdm==4.66.5  # Progress bars
+virtualenv==20.26.4  # For isolated Python tests
+# Note: For JS (npm/yarn), Java (mvn), Go (go), Ruby (bundler) - use subprocess; assume installed on host for validation.
