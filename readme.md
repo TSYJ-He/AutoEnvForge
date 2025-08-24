@@ -22,8 +22,6 @@ A robust, AI-powered one-click tool that automatically detects and sets up devel
 ## Target Users
 - Developers cloning unfamiliar repos.
 - Open-source contributors onboarding quickly.
-- Teams automating CI/CD bootstrapping.
-- AI/ML projects like DCPE, where PyTorch/CUDA deps are inferred automatically.
 
 ## Goals & Unique Aspects
 - Achieve 95%+ accuracy for popular languages.
