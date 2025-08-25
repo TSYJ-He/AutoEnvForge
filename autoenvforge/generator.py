@@ -9,7 +9,6 @@ class Generator:
     def __init__(self, verbose=False):
         self.verbose = verbose
         self.docker_client = docker.from_env()
-
     def generate(self, scanned_data, inferred_deps, generate_docker=False):
         generated_files = {}
         for subdir, sub_inferred in tqdm(inferred_deps['per_subdir'].items(), desc="Generating files", disable=not self.verbose):
