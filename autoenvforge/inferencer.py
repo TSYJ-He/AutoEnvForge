@@ -6,7 +6,6 @@ from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassifica
 import torch
 from tqdm import tqdm
 from . import plugins
-
 class Inferencer:
     def __init__(self, verbose=False, cache=False):
         self.verbose = verbose
@@ -18,7 +17,6 @@ class Inferencer:
         self.pipeline = pipeline("text-classification", model=self.model, tokenizer=self.tokenizer, device=0 if torch.cuda.is_available() else -1, top_k=None)
 
     def infer(self, scanned_data):
-        # Load cache
         if self.cache and os.path.exists(self.cache_file):
             with open(self.cache_file, 'r') as f:
                 cached = json.load(f)
