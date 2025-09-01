@@ -1,6 +1,5 @@
 # plugins.py: Dict of lang plugins; load dynamically if folder exists
 plugins = {}
-
 try:
     import importlib.util
     import os
@@ -15,9 +14,6 @@ try:
                 plugins[lang] = module.Plugin()  # Assume each has a Plugin class with parse/generate/validate
 except Exception:
     pass
-
-# Example inline plugins for go and ruby (users can move to plugins/ folder)
-
 class GoPlugin:
     def parse(self, path):
         # Simple go mod parse
