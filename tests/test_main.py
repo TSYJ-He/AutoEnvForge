@@ -3,7 +3,6 @@ from click.testing import CliRunner
 from unittest.mock import patch, MagicMock
 from autoenvforge.main import cli
 from autoenvforge.scanner import Scanner
-
 @pytest.fixture
 def runner():
     return CliRunner()
